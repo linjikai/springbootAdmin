@@ -1,0 +1,30 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: SpringBoot Admin
+  boot:
+    admin:
+      notify:
+        mail:
+          to: 304126190@qq.com
+          from: 304126190@qq.com
+      url: http://localhost:8088
+#      username: ljk
+#      password: ljk
+      routes:
+        endpoints: env,metrics,trace,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,activiti,hystrix.stream
+  mail:
+    host: smtppppp.qq.com
+    username: 304126190@qq.com
+    password: hikkipphsqcmcaig
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+info:
+  version: 1.0.0
+  info: 监控测试界面
